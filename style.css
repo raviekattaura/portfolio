@@ -1,64 +1,121 @@
 
-/* 
-	STYLE.CSS:
-	One stylesheet to rule them all.
-	
-	selector { property:value }
-	
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
-
-body {
-  background-color: #5f5345;
+body{
+  background-color: darkgray;
+  margin: 0;
 }
- 
-.pageContainer {
-  width: 940px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  background-color: #fff;
+
+header .wrapper{
+  background-color: black;
+  color:burlywood;
+  align-self: start;
 }
- 
-.imageContainer {
+
+header img{
+  width: 15em;
+  float:right;
+}
+
+header a{
+  color: coral;
+  margin: auto;
+  padding: 1em;
+}
+header nav{
+  padding-bottom: 0.5em;
+}
+
+
+.one-half {
+  width: 450px;
   float: left;
-  width: 620px;
+  margin: auto;
+  padding: 1em;
+  color: cornsilk;
+}
+
+.one-half p{
+  font-size: 1.4em;
+  color: burlywood;
 }
  
-.textContainer {
+
+.wrapper {
+  width: 980px;
+  margin: auto;
+  border: 2px solid;
+  background-color:bisque
+}
+
+.one-third{
+  width: 310px;
+  height: 400px;
   float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 0.5em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: 1px solid;
+  color: brown;
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 1em;
 }
 
-img {
-  width: 100%;
-}
- 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 64px;
-  color: #8b1b00;
-}
- 
-p, li {
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  color: #51473b;
+.one-third h3{
+  color: darkblue
 }
 
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.one-third img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15%;
+}
+
+.contactsection{
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  color: darkblue;
+  padding: 1px;
+  margin: 1px;
+}
+
+.contactsection h3{
+  color:darkred
+}
 
 
 
-/* ---- Advanced ---- */
-/* This tag is a bit advanced for this lesson,  
-   but is needed to wrap the pageContainer 
-   around any sized content that is floated within it. */
-
-.pageContainer:after { 
-  content: " ";
+.row::after{
+  content: "";
   display: table;
   clear: both;
 }
- 
+
+footer{
+  background-color: rgb(5, 5, 5);
+}
+
+footer nav{
+  color:burlywood;
+  text-align:center;
+  background-color:black;
+  padding: 0.5em
+}
+
+/*
+p::before {
+  content: "..";
+}
+
+p::after {
+  content: "..";
+}
+*/
