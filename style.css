@@ -116,11 +116,11 @@ footer nav{
 /*. Peudo links. */
 
 a:link {
-  color: #ff0000;
+  color: darkred;
 }
 
 a:visited {
-  color: #00FF00;
+  color: darkblue;
 }
 
 /*
